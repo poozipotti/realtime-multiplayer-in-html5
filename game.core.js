@@ -1202,7 +1202,7 @@ game_core.prototype.client_draw_info = function() {
     if(this.players.self.host) {
 
         this.ctx.fillStyle = 'rgba(255,255,255,0.7)';
-        this.ctx.fillText('You are the host', 10 , 465);
+        this.ctx.fillText('You are the host', 10 , this.world.height - 10);
 
     } //if we are the host
 
