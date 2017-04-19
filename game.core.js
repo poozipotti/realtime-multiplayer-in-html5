@@ -60,8 +60,8 @@ if('undefined' != typeof(global)) frame_time = 45; //on server we run at 45ms, 2
 
             //Used in collision etc.
         this.world = {
-            width : 720,
-            height : 480
+            width : 1920,
+            height : 1080
         };
 
             //We create a player set, passing them
@@ -808,7 +808,7 @@ game_core.prototype.client_update_physics = function() {
 game_core.prototype.client_update = function() {
 
         //Clear the screen area
-    this.ctx.clearRect(0,0,720,480);
+    this.ctx.clearRect(0,0,this.world.width,this.world.height);
 
         //draw help/information if required
     this.client_draw_info();
