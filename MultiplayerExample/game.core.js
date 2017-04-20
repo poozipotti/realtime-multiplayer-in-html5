@@ -313,6 +313,8 @@ game_core.prototype.check_collision = function( item ) {
         item.pos.y = item.pos_limits.y_max;
     }
 
+    if(item.pos.y >= this.player.other
+
         //Fixed point helps be more deterministic
     item.pos.x = item.pos.x.fixed(4);
     item.pos.y = item.pos.y.fixed(4);
